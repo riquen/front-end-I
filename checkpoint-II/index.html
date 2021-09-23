@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Checkpoint II</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" placeholder="Seu nome..." maxlength="100">
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Seu e-mail...">
+
+        <label for="telefone">Telefone (apenas números):</label>
+        <input type="tel" id="telefone" placeholder="(99)99999-9999">
+
+        <label for="data-nascimento">Data de nascimento:</label>
+        <input type="date" id="data-nascimento">
+
+        <label>É maior de idade?</label>
+        <div>
+            <input type="radio" id="sim" name="maior-idade">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="maior-idade">
+            <label for="nao">Não</label>
+        </div>    
+
+        <label for="ponto-turistico">Selecione um ponto turístico:</label>
+        <input list="pontos-turisticos" name="ponto-turistico" id="ponto-turistico">
+        <datalist id="pontos-turisticos">
+            <option value="Mineirão">
+            <option value="Lagoa da Pampulha">
+            <option value="Praça do Papa">
+        </datalist>
+
+        <label>Quais os seus interesses?</label>
+        <div>
+            <input type="checkbox" id="turismo">
+            <label for="turismo">Turismo</label>
+            <input type="checkbox" id="residencia">
+            <label for="residencia">Residência</label>
+            <input type="checkbox" id="estudante">
+            <label for="estudante">Estudante</label>
+        </div>
+
+        <div>
+            <input class="button" type="reset">
+            <input class="button" type="submit">
+        </div>
+    </form>
+</body>
+</html>
