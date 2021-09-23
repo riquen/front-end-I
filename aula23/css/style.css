@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+ul {
+  background-color: #ccc;
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 0.2rem solid #808080;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.banner {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(https://honeywell.scene7.com/is/image/honeywell/AeroBT-s_414384259_Business-Jet_2880x1440);
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'sobre contato';
+  background-color: #ccc;
+  gap: 5rem;
+}
+
+#sobre {
+  grid-area: sobre;
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+
+#contato {
+  grid-area: contato;
+  padding-top: 5rem;
+  padding-right: 5rem;
+}
+
+p {
+  padding-top: 2rem;
+}
